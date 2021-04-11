@@ -16,10 +16,14 @@ fn s [@a]{e:neofetch}
 
 fn gu [@a]{e:gitui}
 fn gaa [@a]{e:git add .}
-fn gcm [@a]{e:git commit -m '$@a'}
+fn gcm [@a]{e:git commit -m $@a}
 fn gpu [@a]{e:git push}
 fn gpl [@a]{e:git pull}
 fn gcl [@a]{e:git clone $@a}
+fn mksh [@a]{
+	e:touch $@a 
+	e:chmod 777 $@a 
+	}
 
 fn e [@a]{e:nvim $@a}
 
